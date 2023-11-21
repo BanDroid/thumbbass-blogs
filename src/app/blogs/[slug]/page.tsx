@@ -51,7 +51,9 @@ export async function generateMetadata({
 export default async function Page({ params: { slug } }: PageProps) {
   const { blog } = await getPost(slug, true);
   if (!blog) notFound();
-  const res = await fetch(blog.readme_uri as string);
+  const res = await fetch(blog.readme_uri as string, {
+    next: { revalidate: 0 },
+  });
   const bodyStr = await res.text();
   return (
     <>
@@ -63,7 +65,7 @@ export default async function Page({ params: { slug } }: PageProps) {
           </blockquote>
         )}
         {/* <Suspense fallback={<></>}> */}
-        <MarkdownRenderer markdownString={blog.readme_uri} />
+        <MarkdownRenderer markdownString={bodyStr} />
         {/* </Suspense> */}
       </Container>
     </>
