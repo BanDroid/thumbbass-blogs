@@ -13,7 +13,7 @@ export default function Logo() {
         alt="logo.png"
         className="!w-6 !h-6 ratio-1/1 rounded"
       />
-      <span className="hidden md:block">IrzinBlogs</span>
+      <span className="hidden md:block">ThumbBass</span>
     </Link>
   );
 }
