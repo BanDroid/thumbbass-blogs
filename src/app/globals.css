@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 90px; /* fixed header height*/
+  margin: -90px 0 0; /* negative fixed header height */
+}
+
+.btn {
+  @apply no-animation;
+}
+
+.markdown,
+.markdown *:not(a, pre, code, .code-line, .token) {
+  @apply !bg-base-100 text-base-content;
+}
+
+.markdown a {
+  @apply !text-primary;
+}
+
+.markdown ul {
+  list-style-type: inherit;
+}
+.markdown ol {
+  list-style-type: decimal;
+}
