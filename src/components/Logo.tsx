@@ -7,7 +7,7 @@ export default function Logo() {
       className="btn btn-ghost text-xl normal-case font-normal flex gap-2 items-center h-full py-2 px-3 md-ripples ripples-dark"
     >
       <Image
-        src="/logo-dark.png"
+        src="/logo-dark.jpg"
         width={24}
         height={24}
         alt="logo.png"

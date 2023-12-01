@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     { rel: "icon", url: "/logo.png", media: "(prefers-color-scheme: light)" },
     {
       rel: "icon",
-      url: "/logo-dark.png",
+      url: "/logo-dark.jpg",
       media: "(prefers-color-scheme: dark)",
     },
   ],
