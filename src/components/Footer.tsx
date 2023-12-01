@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
       </div>
       <div>
-        <p>Copyright © 2023 - All right reserved by Gawk</p>
+        <p>Copyright © 2023 - All right reserved by ThumbBass</p>
       </div>
     </footer>
   );
