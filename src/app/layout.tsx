@@ -10,7 +10,14 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "ThumbBass",
   description: "Professional Music Producer",
-  icons: [{ rel: "icon", url: "/logo.png" }],
+  icons: [
+    { rel: "icon", url: "/logo.png", media: "(prefers-color-scheme: light)" },
+    {
+      rel: "icon",
+      url: "/logo-dark.png",
+      media: "(prefers-color-scheme: dark)",
+    },
+  ],
 };
 
 export default async function RootLayout({
