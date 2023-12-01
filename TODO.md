@@ -1,8 +1,9 @@
 - [x] move all integrations from nodejs/irzin-blogs to nextjs/irzin-blogs
 - [x] avoid waterfalls at `/blogs/[slug]` when fetching post data and markdown
-- [ ] search functionality in SearchBar
+- [x] search functionality in SearchBar
 - [x] blogs route, just to display recent blogs with pagination
 - [x] pagination in client
+- [ ] change image thumbnail to imgbb api
 - [ ] all necessary pages and layout
   - [ ] about
   - [ ] footer
